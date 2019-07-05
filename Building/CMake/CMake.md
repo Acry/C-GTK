@@ -1,6 +1,6 @@
 
 
-# Building GTK Programs using Meson/Ninja
+# Building GTK Programs CMake
 
 ## Build Description
 `CMakeLists.txt`
