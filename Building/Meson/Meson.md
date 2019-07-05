@@ -1,10 +1,10 @@
 
 
-# Meson - Introduction using Ninja
+# Building GTK Programs using Meson/Ninja
 
 
-##Requirements
-Meson has two main dependencies.
+## Requirements
+The Meson Example has two main dependencies.
 
 Python 3 and Ninja
 
@@ -141,19 +141,13 @@ Found ninja-1.9.0 at /usr/bin/ninja
 
 `ninja`
 
-./demo
+`./demo`
 
 ## Cleaning
 
 ### Meson
 
-
 > Secondly this makes it very easy to clean your projects: just delete the build subdirectory and you are done. There is no need to guess whether you need to run make clean, make distclean, make mrproper or something else. When you delete a build subdirectory there is no possible way to have any lingering state from your old builds.
-
-**just delete the build subdirectory**
-
--> what an ingenious solution, I am so glad we have universities teaching computer science.
-
 
 ### Ninja clean
 
@@ -172,13 +166,13 @@ Files created but not referenced in the graph are not removed. This tool takes i
 
 ## Links
 
-https://mesonbuild.com/
-https://mesonbuild.com/Tutorial.html
+<https://mesonbuild.com/>
+<https://mesonbuild.com/Tutorial.html>
 
-https://ninja-build.org/
+<https://ninja-build.org/>
 
-https://en.wikipedia.org/wiki/Meson_(software)
+<https://en.wikipedia.org/wiki/Meson_(software)>
 
-https://www.rojtberg.net/1481/do-not-use-meson/
+<https://www.rojtberg.net/1481/do-not-use-meson/>
 
 

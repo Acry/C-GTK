@@ -1,0 +1,38 @@
+CC ?= gcc
+# ?= The Variable is only set if if undefined.
+
+define colorecho
+      @tput setaf 2
+      @echo $1
+      @tput sgr0
+endef
+
+# PKGCONFIG = $(shell which pkg-config)
+
+CFLAGS   = -Wall -Wextra -mtune=native `pkg-config --cflags gtk+-3.0`
+LDFLAGS  = `pkg-config --libs gtk+-3.0`
+
+# Using backticks is deprecated, but often seen.
+# $(pkg-config --cflags gtk+-3.0) is the correct syntax.
+
+TARGETS = demo
+
+.PHONY: all
+all: $(TARGETS)
+
+demo:   main.c
+	@$(CC) $(CFLAGS) -o $@ $< $(LDFLAGS)
+	$(call colorecho,"$@ success. ./\"$@\" to execute.")
+
+.PHONY: clean
+clean:
+	@rm $(TARGETS) 2>/dev/null || true
+	$(call colorecho,"It is clean now.")
+
+# @	Supresses the output
+
+# $<	First Dependency
+# $@	Target Name
+# $+	List of all Dependencies
+# $^	Unique list of all Dependencies
+
