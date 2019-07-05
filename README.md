@@ -5,7 +5,9 @@
 
 ## Currently available
 
-[Building GTK with Meson](./Building/Meson/Meson.txt)
+### Building
+
+[Intro](./Building/TOC.md)
 
 
 ## Links
@@ -13,4 +15,3 @@
 [Repo](https://github.com/Acry/C-GTK)
 
 [My Homepage](https://acry.github.io/)
-

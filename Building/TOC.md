@@ -1,6 +1,6 @@
 
 
-#Building GTK-Programs
+# Building GTK-Programs
 
 
 The build-process combines all steps to make your program executable.
